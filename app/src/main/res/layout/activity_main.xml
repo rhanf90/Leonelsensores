@@ -1,0 +1,63 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:text="@string/hello_world"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/salida"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="185dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INICIAR"
+                android:id="@+id/iniciar"
+                android:onClick="iniciar"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/detener"
+                android:layout_alignStart="@+id/detener" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DETENER"
+                android:id="@+id/detener"
+                android:onClick="detener"
+                android:layout_below="@+id/iniciar"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LIMPIAR"
+                android:id="@+id/limpiar"
+                android:onClick="limpiar"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+
+
